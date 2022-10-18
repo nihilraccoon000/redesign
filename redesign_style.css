@@ -20,7 +20,7 @@ body {
 
 .card {
     width:100%;
-    background-color:#f4e6c3;
+    background-color:hsl(43, 69%, 86%);
 }
 
 .navbar,.offcanvas-start{
