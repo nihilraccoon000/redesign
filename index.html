@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Part of the code adopted from Jeff's bootstrap tutorial -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Redesign</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark justify-content-center align-items-center">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Responsive Redesign</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kokin.htm">Original</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./redesign.html">Redesigned</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Introductory page -->
+    <div class="d-flex flex-column blankets justify-content-center align-items-center text-center">
+        <img src="./assets/images/head.gif" style="height:60vh">
+        <h1 class="display-1">Responsive Redesign</h1>
+    </div>
+
+    <div class="container-fluid mb-5" id="problem">
+        <div class="mb-4 text-center">
+            <h2 class="display-3">1. Problem Analysis</h2>
+        </div>
+        <div class="row align-items-center justify-content-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5">
+            <div class="text-center col-12 mb-5">
+                <img src="./assets/images/annotated-screenshot.png" class="photo mb-2" style="height: 60vh; width:80vh">
+                <p style="color:darkgrey">An annotated screenshot of <a href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kokin.htm">the original page</a>. I choose it as I've used this archive excessively.</p>
+            </div>
+
+            <div class="col-12 px-3 px-sm-5 ml-md-auto pb-3 pb-sm-5">
+                <p>I came across this website a few years ago while searching for the original text of some wakas. 
+                    It contains the Japanese text & Chinese translation of many waka's from "the Kokin Shu". 
+                    <br>It serves very well as an archive -- it is roughly indexed, and though not aesthetically excellent, it is at least simple and concise.
+                </p><br>
+
+                <p>However, there are some minor problems that can be fixed: 
+                    <ul>
+                        <li class="mb-2">The formatting is weird: 
+                            1) indents do not <b class="highlight">align</b> with the semantics of the content, 
+                            2) the author's name is pushed towards the rightmost <span class="highlight">(the website is not responsive)</span> -- it'll appear a mile away the rest of the content 
+                            when the viewport is wide.
+                        </li>
+                        <li class="mb-2"><b class="highlight">Efficiency/Memorability/Accessibility</b> problem: The title scroll up when scrolling, meanwhile the directory on the left indicates 
+                            not our position but which sections have been visited -- this requires a bit <b class="highlight">extra memory</b> or <b class="highlight">constant checking backs</b> if we want to know what we're looking at.
+                            <br>(And the visited sections are white while the unvisited are blue -- pretty <b class="highlight">counter-intuitive</b>!).
+                        </li>
+                        <li class="mb-2">The box that's supposed to jump to certain poem is useless now. It just serves to annoy you a little bit ;)</li>
+                    </ul>
+                </p>
+                <p><a href="https://wave.webaim.org/report#/https://miko.org/~uraki/kuon/furu/text/waka/kokin/kokin.htm">WAVE</a> also suggests the similar: that it is missing heading structure and page regions. <br>--We're probably not going to have a super clear and complex structure, since there's not that much content, but we can probably make it look more structured visually.</p>
+                <p>Let's get started!</p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5" id="lowfi">
+        <div class="mb-4 text-center">
+            <h2 class="display-3">2. Redesign - Low Fidelity Wireframing</h2>
+        </div>
+        <div class="mb-4 text-center">
+            <h5>Using Balsamiq, I drafted out what this webpage should look like on different devices:</h5>
+            <p class="lead"><ul>
+                They should all have headings to the top of the screen. 
+                <br>On desktops, the directory is always displayed. 
+                <br>On phones or tablets, it is hidden by a toggler.
+            </ul></p>
+        </div>
+        <div class="row align-items-center justify-content-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5">
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/lowfi-pc.png" class="photo mb-2" style="width: 60vw">
+                <p style="color:darkgrey">Lowfi wireframe for desktops</p>
+            </div>
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/lowfi-tablet.png" class="photo mb-2" style="width: 55vw">
+                <p style="color:darkgrey">Lowfi wireframe for tablets</p>
+            </div>
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/lowfi-phone.png" class="photo mb-2" style="width: 55vw">
+                <p style="color:darkgrey">Lowfi wireframe for phones</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5" id="highfi">
+        <div class="mb-4 text-center">
+            <h2 class="display-3">3. Redesign - High Fidelity Prototype</h2>
+        </div>
+        <div class="text-center pt-sm-5">
+            <h5>The visual elements I used in the high-fi prototype:</h5>
+        </div>
+        <div class="row align-items-center justify-content-center px-3 px-sm-5 mx-xl-5">
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/visual guide.png" class="photo mb-2" style="width: 65vw">
+                <p style="color:darkgrey">Visual Guide</p>
+            </div>
+        </div>
+        <div class="text-center pt-sm-5">
+            <h5>And here are my redesigns:</h5>
+        </div>
+        <div class="row align-items-center justify-content-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5">
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/highfi-pc.png" class="photo mb-2" style="width: 60vw">
+                <p style="color:darkgrey">Highfi prototype for desktops</p>
+            </div>
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/highfi-tablet.png" class="photo mb-2" style="width: 55vw">
+                <p style="color:darkgrey">Highfi prototype for tablets</p>
+            </div>
+            <div class="text-center col-12 mb-4">
+                <img src="./assets/images/highfi-phone.png" class="photo mb-2" style="width: 55vw">
+                <p style="color:darkgrey">Highfi prototype for phones</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5" id="redesigned">
+        <div class="mb-4 text-center">
+            <h2 class="display-3">4. Redesign - Final Demo</h2>
+        </div>
+        <div class="row align-items-center justify-content-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5">
+            <div class="text-center col-12 col-xxl-6 mb-3">
+                <img src="./assets/images/final-screenshot.png" class="photo mb-2" style="width:40vw">
+                <p style="color:darkgrey">A screenshot of the <a href="./redesign.html">demo</a>.</p>
+            </div>
+            <div class="col-12 col-xxl-6 px-sm-5 ml-md-auto pb-sm-5">
+                <p class="lead">
+                    Now let me present my final work. Notice that this is just a demo. All links in the navigation side bar link back to the original site. Also, I omitted some content because copy-pasting all of the poems by hand would be a nightmare. My next goal is to store them in JSON and get maybe get JS to do the work for me.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

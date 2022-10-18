@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- Part of the code adopted from Jeff's bootstrap tutorial, and from bootstrap docs -->
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="redesign_style.css">
+    <title>Kokin Waka Shu 13</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <nav class="navbar fixed-top justify-content-center align-items-center">
+        <div class="container-fluid justify-content-xl-center align-items-center">
+            <button class="btn btn-secondary mx-2 d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Show Directory</button>
+            <a class="navbar-brand" href="#">古今和歌集  卷十三　戀歌(三)</a>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-row align-items-center justify-content-center mx-2 my-2 mx-md-5 my-md-5 px-2 py-2 px-xl-5 py-xl-5">
+        <div class="offcanvas-xl offcanvas-start" style="height:100vh; flex-grow:1" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">古今和歌集</h5>
+            </div>
+            <div class="offcanvas-body px-4 py-4 justify-content-xxl-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/jinmei.htm">歌人別索引</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kanajo.htm">假名序</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/manajo.htm">真名序</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/info.htm">凡例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk01.htm">第一　春歌上</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk02.htm">第二　春歌下</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk03.htm">第三　夏歌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk04.htm">第四　秋歌上</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk05.htm">第五　秋歌下</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk06.htm">第六　冬歌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk07.htm">第七　賀歌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk08.htm">第八　離別歌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk09.htm">第九　羇旅歌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk10.htm">第十　物名</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk11.htm">十一　戀歌一</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk12.htm">十二　戀歌二</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">十三　戀歌三 <font color="grey">(currently viewing)</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk14.htm">十四　戀歌四</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://miko.org/~uraki/kuon/furu/text/waka/kokin/kk15.htm">十五　戀歌五</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="" style="height:100vh; flex-grow:2" id="cardContainer">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0616</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彌生朔</rb><rp>(</rp><rt>やよひのついたち</rt><rp>)</rp></ruby>より、<ruby><rb>忍</rb><rp>(</rp><rt>しの</rt><rp>)</rp></ruby>びに<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby><rb>物告言</rb><rp>(</rp><rt>ものらい</rt><rp>)</rp></ruby>ひて、<ruby><rb>後</rb><rp>(</rp><rt>のち</rt><rp>)</rp></ruby>に、<ruby><rb>雨</rb><rp>(</rp><rt>あま</rt><rp>)</rp></ruby>の<ruby><rb>細降</rb><rp>(</rp><rt>そほふ</rt><rp>)</rp></ruby>りけるに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>起</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>きも<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>ず　<ruby><rb>寢</rb><rp>(</rp><rt>ね</rt><rp>)</rp></ruby>も<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>で<ruby><rb>夜</rb><rp>(</rp><rt>よる</rt><rp>)</rp></ruby>を　<ruby><rb>明</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>かしては　<ruby><rb>春</rb><rp>(</rp><rt>はる</rt><rp>)</rp></ruby>の<ruby><rb>物</rb><rp>(</rp><rt>もの</rt><rp>)</rp></ruby>とて　<ruby><rb>長雨暮</rb><rp>(</rp><rt>ながめく</rt><rp>)</rp></ruby>らしつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            彌生三月朔日之時，與女竊語不為人知。其後細雨紛降，遂詠而遣贈之
+                        </b></p>
+                        <p>
+                            相會與君後　不起不眠徹終夜　夜明日曉時　春日長雨降紛紛　眺此雨景度終日
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0617</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>業平朝臣家</rb><rp>(</rp><rt>なりひらのあそんのいへ</rt><rp>)</rp></ruby>に<ruby><rb>侍</rb><rp>(</rp><rt>はべ</rt><rp>)</rp></ruby>りける<ruby><rb>女</rb><rp>(</rp><rt>おみな</rt><rp>)</rp></ruby>の<ruby><rb>許</rb><rp>(</rp><rt>もと</rt><rp>)</rp></ruby>に、<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒然</rb><rp>(</rp><rt>つれづれ</rt><rp>)</rp></ruby>の　<ruby><rb>長雨</rb><rp>(</rp><rt>ながめ</rt><rp>)</rp></ruby>に<ruby><rb>增</rb><rp>(</rp><rt>ま</rt><rp>)</rp></ruby>さる　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>のみ<ruby><rb>濡</rb><rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>れて　<ruby><rb>逢</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ふ<ruby><rb>由</rb><rp>(</rp><rt>よし</rt><rp>)</rp></ruby>も<ruby><rb>無</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>し
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            詠歌遣贈侍業平朝臣家之女
+                        </b></p>
+                        <p>
+                            徒然令人憂　長雨紛降不止息　淚河水益增　唯令青杉沾袖濕　未得逢由無所晤
+                        </p>
+                        <p align="right">藤原敏行朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0618</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彼女</rb><rp>(</rp><rt>かのをみな</rt><rp>)</rp></ruby>に<ruby><rb>代</rb><rp>(</rp><rt>かは</rt><rp>)</rp></ruby>りて<ruby><rb>返</rb><rp>(</rp><rt>かへ</rt><rp>)</rp></ruby>しに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>める
+                        </b></p>
+                        <p>
+                            <ruby><rb>淺</rb><rp>(</rp><rt>あさみ</rt><rp>)</rp></ruby>こそ　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>は<ruby><rb>漬</rb><rp>(</rp><rt>ひつ</rt><rp>)</rp></ruby>らめ　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>さへ<ruby><rb>流</rb><rp>(</rp><rt>なが</rt><rp>)</rp></ruby>ると　<ruby><rb>聞</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>かば<ruby><rb>賴</rb><rp>(</rp><rt>たの</rt><rp>)</rp></ruby>まむ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            代彼女返歌而詠
+                        </b></p>
+                        <p>
+                            淚川水兮淺　唯得漬袖沾襟濕　其河若深邃　而聞或可流君身　豈不賴之寄慕情
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0619</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>寄</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>る<ruby><rb>邊無</rb><rp>(</rp><rt>べな</rt><rp>)</rp></ruby>み　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>をこそ<ruby><rb>遠</rb><rp>(</rp><rt>とほ</rt><rp>)</rp></ruby>く　<ruby><rb>隔</rb><rp>(</rp><rt>へだ</rt><rp>)</rp></ruby>てつれ　<ruby><rb>心</rb><rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>は<ruby><rb>君</rb><rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>が　<ruby><rb>影</rb><rp>(</rp><rt>かげ</rt><rp>)</rp></ruby>と<ruby><rb>成</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>りにき
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            身無依歸處　兩兩相離在天邊　雖隔千里遠　此心欲作君身影　膠漆不離伴身邊
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0620</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒</rb><rp>(</rp><rt>いたづら</rt><rp>)</rp></ruby>に　<ruby><rb>行</rb><rp>(</rp><rt>ゆ</rt><rp>)</rp></ruby>きては<ruby><rb>來</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ぬる　<ruby><rb>物故</rb><rp>(</rp><rt>ものゆゑ</rt><rp>)</rp></ruby>に　<ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>まく<ruby><rb>欲</rb><rp>(</rp><rt>ほし</rt><rp>)</rp></ruby>さに　<ruby><rb>誘</rb><rp>(</rp><rt>いざ</rt><rp>)</rp></ruby>なはれつつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            徒然無所益　既知今往必空歸　然以慕情故　雖知徒然不得禁　一心欲逢誘己出
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0616</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彌生朔</rb><rp>(</rp><rt>やよひのついたち</rt><rp>)</rp></ruby>より、<ruby><rb>忍</rb><rp>(</rp><rt>しの</rt><rp>)</rp></ruby>びに<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby><rb>物告言</rb><rp>(</rp><rt>ものらい</rt><rp>)</rp></ruby>ひて、<ruby><rb>後</rb><rp>(</rp><rt>のち</rt><rp>)</rp></ruby>に、<ruby><rb>雨</rb><rp>(</rp><rt>あま</rt><rp>)</rp></ruby>の<ruby><rb>細降</rb><rp>(</rp><rt>そほふ</rt><rp>)</rp></ruby>りけるに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>起</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>きも<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>ず　<ruby><rb>寢</rb><rp>(</rp><rt>ね</rt><rp>)</rp></ruby>も<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>で<ruby><rb>夜</rb><rp>(</rp><rt>よる</rt><rp>)</rp></ruby>を　<ruby><rb>明</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>かしては　<ruby><rb>春</rb><rp>(</rp><rt>はる</rt><rp>)</rp></ruby>の<ruby><rb>物</rb><rp>(</rp><rt>もの</rt><rp>)</rp></ruby>とて　<ruby><rb><u>長雨</u>暮</rb><rp>(</rp><rt>ながめく</rt><rp>)</rp></ruby>らしつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            彌生三月朔日之時，與女竊語不為人知。其後細雨紛降，遂詠而遣贈之
+                        </b></p>
+                        <p>
+                            相會與君後　不起不眠徹終夜　夜明日曉時　春日長雨降紛紛　眺此雨景度終日
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0617</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>業平朝臣家</rb><rp>(</rp><rt>なりひらのあそんのいへ</rt><rp>)</rp></ruby>に<ruby><rb>侍</rb><rp>(</rp><rt>はべ</rt><rp>)</rp></ruby>りける<ruby><rb>女</rb><rp>(</rp><rt>おみな</rt><rp>)</rp></ruby>の<ruby><rb>許</rb><rp>(</rp><rt>もと</rt><rp>)</rp></ruby>に、<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒然</rb><rp>(</rp><rt>つれづれ</rt><rp>)</rp></ruby>の　<ruby><rb>長雨</rb><rp>(</rp><rt>ながめ</rt><rp>)</rp></ruby>に<ruby><rb>增</rb><rp>(</rp><rt>ま</rt><rp>)</rp></ruby>さる　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>のみ<ruby><rb>濡</rb><rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>れて　<ruby><rb>逢</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ふ<ruby><rb>由</rb><rp>(</rp><rt>よし</rt><rp>)</rp></ruby>も<ruby><rb>無</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>し
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            詠歌遣贈侍業平朝臣家之女
+                        </b></p>
+                        <p>
+                            徒然令人憂　長雨紛降不止息　淚河水益增　唯令青杉沾袖濕　未得逢由無所晤
+                        </p>
+                        <p align="right">藤原敏行朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0618</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彼女</rb><rp>(</rp><rt>かのをみな</rt><rp>)</rp></ruby>に<ruby><rb>代</rb><rp>(</rp><rt>かは</rt><rp>)</rp></ruby>りて<ruby><rb>返</rb><rp>(</rp><rt>かへ</rt><rp>)</rp></ruby>しに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>める
+                        </b></p>
+                        <p>
+                            <ruby><rb>淺</rb><rp>(</rp><rt>あさみ</rt><rp>)</rp></ruby>こそ　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>は<ruby><rb>漬</rb><rp>(</rp><rt>ひつ</rt><rp>)</rp></ruby>らめ　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>さへ<ruby><rb>流</rb><rp>(</rp><rt>なが</rt><rp>)</rp></ruby>ると　<ruby><rb>聞</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>かば<ruby><rb>賴</rb><rp>(</rp><rt>たの</rt><rp>)</rp></ruby>まむ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            代彼女返歌而詠
+                        </b></p>
+                        <p>
+                            淚川水兮淺　唯得漬袖沾襟濕　其河若深邃　而聞或可流君身　豈不賴之寄慕情
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0619</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>寄</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>る<ruby><rb>邊無</rb><rp>(</rp><rt>べな</rt><rp>)</rp></ruby>み　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>をこそ<ruby><rb>遠</rb><rp>(</rp><rt>とほ</rt><rp>)</rp></ruby>く　<ruby><rb>隔</rb><rp>(</rp><rt>へだ</rt><rp>)</rp></ruby>てつれ　<ruby><rb>心</rb><rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>は<ruby><rb>君</rb><rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>が　<ruby><rb>影</rb><rp>(</rp><rt>かげ</rt><rp>)</rp></ruby>と<ruby><rb>成</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>りにき
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            身無依歸處　兩兩相離在天邊　雖隔千里遠　此心欲作君身影　膠漆不離伴身邊
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0620</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒</rb><rp>(</rp><rt>いたづら</rt><rp>)</rp></ruby>に　<ruby><rb>行</rb><rp>(</rp><rt>ゆ</rt><rp>)</rp></ruby>きては<ruby><rb>來</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ぬる　<ruby><rb>物故</rb><rp>(</rp><rt>ものゆゑ</rt><rp>)</rp></ruby>に　<ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>まく<ruby><rb>欲</rb><rp>(</rp><rt>ほし</rt><rp>)</rp></ruby>さに　<ruby><rb>誘</rb><rp>(</rp><rt>いざ</rt><rp>)</rp></ruby>なはれつつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            徒然無所益　既知今往必空歸　然以慕情故　雖知徒然不得禁　一心欲逢誘己出
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0616</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彌生朔</rb><rp>(</rp><rt>やよひのついたち</rt><rp>)</rp></ruby>より、<ruby><rb>忍</rb><rp>(</rp><rt>しの</rt><rp>)</rp></ruby>びに<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby><rb>物告言</rb><rp>(</rp><rt>ものらい</rt><rp>)</rp></ruby>ひて、<ruby><rb>後</rb><rp>(</rp><rt>のち</rt><rp>)</rp></ruby>に、<ruby><rb>雨</rb><rp>(</rp><rt>あま</rt><rp>)</rp></ruby>の<ruby><rb>細降</rb><rp>(</rp><rt>そほふ</rt><rp>)</rp></ruby>りけるに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>起</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>きも<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>ず　<ruby><rb>寢</rb><rp>(</rp><rt>ね</rt><rp>)</rp></ruby>も<ruby><rb>為</rb><rp>(</rp><rt>せ</rt><rp>)</rp></ruby>で<ruby><rb>夜</rb><rp>(</rp><rt>よる</rt><rp>)</rp></ruby>を　<ruby><rb>明</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>かしては　<ruby><rb>春</rb><rp>(</rp><rt>はる</rt><rp>)</rp></ruby>の<ruby><rb>物</rb><rp>(</rp><rt>もの</rt><rp>)</rp></ruby>とて　<ruby><rb><u>長雨</u>暮</rb><rp>(</rp><rt>ながめく</rt><rp>)</rp></ruby>らしつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            彌生三月朔日之時，與女竊語不為人知。其後細雨紛降，遂詠而遣贈之
+                        </b></p>
+                        <p>
+                            相會與君後　不起不眠徹終夜　夜明日曉時　春日長雨降紛紛　眺此雨景度終日
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0617</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>業平朝臣家</rb><rp>(</rp><rt>なりひらのあそんのいへ</rt><rp>)</rp></ruby>に<ruby><rb>侍</rb><rp>(</rp><rt>はべ</rt><rp>)</rp></ruby>りける<ruby><rb>女</rb><rp>(</rp><rt>おみな</rt><rp>)</rp></ruby>の<ruby><rb>許</rb><rp>(</rp><rt>もと</rt><rp>)</rp></ruby>に、<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みて<ruby><rb>遣</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>はしける
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒然</rb><rp>(</rp><rt>つれづれ</rt><rp>)</rp></ruby>の　<ruby><rb>長雨</rb><rp>(</rp><rt>ながめ</rt><rp>)</rp></ruby>に<ruby><rb>增</rb><rp>(</rp><rt>ま</rt><rp>)</rp></ruby>さる　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>のみ<ruby><rb>濡</rb><rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>れて　<ruby><rb>逢</rb><rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ふ<ruby><rb>由</rb><rp>(</rp><rt>よし</rt><rp>)</rp></ruby>も<ruby><rb>無</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>し
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            詠歌遣贈侍業平朝臣家之女
+                        </b></p>
+                        <p>
+                            徒然令人憂　長雨紛降不止息　淚河水益增　唯令青杉沾袖濕　未得逢由無所晤
+                        </p>
+                        <p align="right">藤原敏行朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0618</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>彼女</rb><rp>(</rp><rt>かのをみな</rt><rp>)</rp></ruby>に<ruby><rb>代</rb><rp>(</rp><rt>かは</rt><rp>)</rp></ruby>りて<ruby><rb>返</rb><rp>(</rp><rt>かへ</rt><rp>)</rp></ruby>しに<ruby><rb>詠</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>める
+                        </b></p>
+                        <p>
+                            <ruby><rb>淺</rb><rp>(</rp><rt>あさみ</rt><rp>)</rp></ruby>こそ　<ruby><rb>袖</rb><rp>(</rp><rt>そで</rt><rp>)</rp></ruby>は<ruby><rb>漬</rb><rp>(</rp><rt>ひつ</rt><rp>)</rp></ruby>らめ　<ruby><rb>淚河</rb><rp>(</rp><rt>なみだがは</rt><rp>)</rp></ruby>　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>さへ<ruby><rb>流</rb><rp>(</rp><rt>なが</rt><rp>)</rp></ruby>ると　<ruby><rb>聞</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>かば<ruby><rb>賴</rb><rp>(</rp><rt>たの</rt><rp>)</rp></ruby>まむ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            代彼女返歌而詠
+                        </b></p>
+                        <p>
+                            淚川水兮淺　唯得漬袖沾襟濕　其河若深邃　而聞或可流君身　豈不賴之寄慕情
+                        </p>
+                        <p align="right">在原業平朝臣</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0619</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>寄</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>る<ruby><rb>邊無</rb><rp>(</rp><rt>べな</rt><rp>)</rp></ruby>み　<ruby><rb>身</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>をこそ<ruby><rb>遠</rb><rp>(</rp><rt>とほ</rt><rp>)</rp></ruby>く　<ruby><rb>隔</rb><rp>(</rp><rt>へだ</rt><rp>)</rp></ruby>てつれ　<ruby><rb>心</rb><rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>は<ruby><rb>君</rb><rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>が　<ruby><rb>影</rb><rp>(</rp><rt>かげ</rt><rp>)</rp></ruby>と<ruby><rb>成</rb><rp>(</rp><rt>な</rt><rp>)</rp></ruby>りにき
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            身無依歸處　兩兩相離在天邊　雖隔千里遠　此心欲作君身影　膠漆不離伴身邊
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <b>0620</b><br><br>
+                    <ul>
+                        <p><b>
+                            <ruby><rb>題知</rb><rp>(</rp><rt>だいし</rt><rp>)</rp></ruby>らず
+                        </b></p>
+                        <p>
+                            <ruby><rb>徒</rb><rp>(</rp><rt>いたづら</rt><rp>)</rp></ruby>に　<ruby><rb>行</rb><rp>(</rp><rt>ゆ</rt><rp>)</rp></ruby>きては<ruby><rb>來</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>ぬる　<ruby><rb>物故</rb><rp>(</rp><rt>ものゆゑ</rt><rp>)</rp></ruby>に　<ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>まく<ruby><rb>欲</rb><rp>(</rp><rt>ほし</rt><rp>)</rp></ruby>さに　<ruby><rb>誘</rb><rp>(</rp><rt>いざ</rt><rp>)</rp></ruby>なはれつつ
+                        </p>
+                        <hr><br>
+                        <p><b>
+                            題不知
+                        </b></p>
+                        <p>
+                            徒然無所益　既知今往必空歸　然以慕情故　雖知徒然不得禁　一心欲逢誘己出
+                        </p>
+                        <p align="right">佚名</p>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This is to leave 1/4 blank space after the cards: -->
+        <div class="offcanvas-xl" style="height:100vh; flex-grow:1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+        </div>
+    </div>
+
+</body>

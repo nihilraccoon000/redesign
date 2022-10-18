@@ -1,0 +1,46 @@
+/* noto-serif-jp-regular - latin_japanese */
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.woff') format('woff'), /* Modern Browsers */
+         url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/noto-serif-jp-v21-latin_japanese-regular.svg#NotoSerifJP') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: "Noto Serif JP";
+    color:black;
+    background-color: #f4e6c3;
+}
+
+.card {
+    width:100%;
+    background-color:#f4e6c3;
+}
+
+.navbar,.offcanvas-start{
+    background-color:#e9dab4;
+}
+
+.active {
+    background-color: #cabb95;
+}
+
+.btn {
+    color:black;
+    background-color: #baad8b;
+    border:0;
+}
+
+.btn:hover,
+.btn:focus {
+    filter: brightness(120%);
+    background-color: #686868;
+}
+
+
